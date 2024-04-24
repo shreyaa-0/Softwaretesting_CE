@@ -24,12 +24,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-//comment this on local
-// import utils.EventHandler;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
     public static WebDriver driver;
     private WebDriverWait wait;
@@ -38,19 +33,7 @@ public class AppTest {
 
     @BeforeMethod
     public void beforeMethod() throws MalformedURLException {
-        // Portal
-        // ChromeOptions chromeOptions = new ChromeOptions();
-        // driver = new RemoteWebDriver(new URL("http://localhost:4444"),
-        // chromeOptions);
-        // driver.manage().window().maximize();
-        // wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        // driver.get("https://economictimes.indiatimes.com/et-now/results");
-        // wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        // WebDriverListener listener = new EventHandler();
-        // driver = new EventFiringDecorator<>(listener).decorate(driver);
-        // System.out.println("Browser");
-
-        // Local
+       
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
